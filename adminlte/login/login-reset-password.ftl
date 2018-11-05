@@ -16,15 +16,15 @@
             </div>
 
             <div class="${properties.kcFormGroupClass!} row">
-                <div id="kc-form-options" class="${properties.kcFormOptionsClass!} col-xs-5">
+                <div id="kc-form-options" class="${properties.kcFormOptionsClass!} col-xs-7">
                     <div class="${properties.kcFormOptionsWrapperClass!}">
                         <span>
-                            <a class="btn btn-default btn-flat btn-block" href="${url.loginUrl}"><i class="fa fa-caret-left"></i>&nbsp;&nbsp;${msg("backToLogin")}</a>
+                            <a class="btn btn-default btn-flat btn-block" href="${url.loginUrl}">${msg("backToLogin")?no_esc}</a>
                         </span>
                     </div>
                 </div>
 
-                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!} col-xs-7">
+                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!} col-xs-5">
                     <input class="btn btn-primary btn-flat btn-block ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
                 </div>
             </div>

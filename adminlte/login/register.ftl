@@ -76,15 +76,15 @@
 
             <div class="${properties.kcFormGroupClass!} register-button-container">
                 <div class="row">
-                    <div id="kc-form-options" class="col-xs-5 ${properties.kcFormOptionsClass!}">
+                    <div id="kc-form-options" class="col-xs-7 ${properties.kcFormOptionsClass!}">
                         <div class="${properties.kcFormOptionsWrapperClass!}">
                             <span>
-                                <a class="btn btn-default btn-flat btn-block" href="${url.loginUrl}"><i class="fa fa-caret-left"></i>&nbsp;&nbsp;${msg("backToLogin")}</a>
+                                <a class="btn btn-default btn-flat btn-block" href="${url.loginUrl}">${msg("backToLogin")?no_esc}</a>
                             </span>
                         </div>
                     </div>
 
-                    <div id="kc-form-buttons" class="col-xs-7 ${properties.kcFormButtonsClass!}">
+                    <div id="kc-form-buttons" class="col-xs-5 ${properties.kcFormButtonsClass!}">
                         <input class="btn btn-primary btn-flat btn-block ${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doRegister")}"/>
                     </div>
                 </div>
